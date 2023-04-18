@@ -10,5 +10,5 @@
 </div>
 
 
-#### I love mario and played a lot when i was a kid
+#### I love Super Mario and played a lot when i was a kid
 
