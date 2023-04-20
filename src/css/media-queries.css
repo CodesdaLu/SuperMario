@@ -1,4 +1,4 @@
-@media (max-width: 1236px) {
+@media (max-width: 1250px) {
     * {
         text-align: end;
     }
@@ -69,7 +69,7 @@
         justify-content: center;
         height: auto;
         gap: 30px;
-        text-align: center;
+        align-items: center;
     }
 
     .container .imagem-titulo {
@@ -93,6 +93,15 @@
 
     .container .trailer {
         background-color: #E52521;
+        color: #ffffff;
+        padding: 15px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-right: 285px;
+        font-size: 18px;
+        justify-content: center;
+        
     }
 
     .quadrado {
@@ -145,6 +154,15 @@
         padding: 10px;
     }
 
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        align-items: center;
+        position: absolute;
+    }
+
     .container .imagem-titulo {
         max-width: 90%;
     }
@@ -153,6 +171,40 @@
         max-width: 75%;
     }
 
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #1b1b1b;
+        text-align-last: justify;
+    }
+
+    .container .trailer {
+        display: flex;
+        background-color: #E52521;
+        color: #ffffff;
+        padding: 34px;
+        margin: 0 auto;
+        font-size: 18px;
+        align-items: center;
+        height: calc(100vh - 776px);
+    }
+
+    .quadrado {
+        width: auto;
+        border-radius: 1px 1px 15px 15px;
+        background-color: #a81818;
+    }
+
+
+    .container .imagem-titulo {
+        max-width: 90%;
+    }
+
+    
     .modal .fechar-modal {
         width: 30px;
         line-height: 30px;
@@ -321,14 +373,13 @@
             height: 20px;
             margin: 112px 0 30px 319px;
             cursor: pointer;
-            background-color: #ece9e9;
             border-radius: 2px;
         }
         
         .bar {
             height: 5px;
             width: 100%;
-            background-color: #DC052D;
+            background-color: #131212;
             display: block;
             border-radius: 5px;
             transition: 0.3s ease;
