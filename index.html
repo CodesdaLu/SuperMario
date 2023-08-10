@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="./src/imagem/favicon.ico" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;500&display=swap');
+	</style>
+
+	<link rel="stylesheet" href="./src/css/reset.css">
+
+	<link rel="stylesheet" href="./src/css/style.css">
+
+	<link rel="stylesheet" href="./src/css/media-queries.css">
+
+	<title>Super Mario Bros | O Filme</title>
+</head>
+
+<body>
+	<div class="fundo-video">
+		<video class="video" autoplay loop muted>
+			<source src="./src/video/video-mario.mp4" type="video/mp4" />
+		</video>
+	</div>
+
+	<header class="cabecalho">
+
+		<a>
+			<img class="logo" src="./src/imagem/logo-chapeu-mario.png" alt="logo chapéu Mario" />
+		</a>
+		<div id="menux">
+			<div id="menu-bar" onclick="menuOnClick()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<nav>
+				<div class="nav" id="nav">
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sinopse.html">Sinopse</a></li>
+						<li><a href="curiosidades.html">Curiosidades</a></li>
+					</ul>
+				</div>
+
+			</nav>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+	</header>
+	<main class="container">
+		<div class="info">
+			<img class="imagem-titulo" src="./src/imagem/titulo.png" alt="imagem do título do filme" />
+			<p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos
+				cogumelos, governado pela Princesa Peach, mas ameaçado pelo rei dos Koopas, que faz de tudo para
+				conseguir reinar em todos os lugares.</p>
+			<button class="trailer">Assistir trailer</button>
+		</div>
+		<img class="mario" src="./src/imagem/super-mario-chars.png" />
+
+		<div class="modal">
+			<div class="conteudo-modal">
+				<span class="fechar-modal">X</span>
+				<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk"
+					title="Trailer oficial" frameborder="1"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</div>
+	</main>
+
+	<script src="./src/js/index.js"></script>
+</body>
+
+</html>
